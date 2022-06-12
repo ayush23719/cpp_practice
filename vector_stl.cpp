@@ -41,4 +41,7 @@ int main()
     {
         cout << i << " ";
     }
+
+    // use .empty function to check if vector is empty(returns 0 or 1)
+    cout << "\nIs vector empty:" << v.empty() << endl;
 }
