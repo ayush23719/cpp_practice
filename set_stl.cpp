@@ -43,13 +43,13 @@ int main()
 
     // use .count function to check if a value is present in the set
     cout << endl
-         << "Is 8 present in the set: " << s.count(8) << endl;
+         << "Is 3 present in the set: " << s.count(3) << endl;
 
     // use .find function to return an iterator to the element in the set
-    set<int>::iterator itr = s.find(8);
-    cout << "Find the element 8 in the set: " << *itr << endl;
+    set<int>::iterator itr = s.find(3);
+    cout << "Find the element 3 in the set: " << *itr << endl;
 
-    // print elements after iterator(8) in the set
+    // print elements after iterator(3) in the set
     for (auto it = itr; it != s.end(); it++)
         cout << *it << " ";
 }
