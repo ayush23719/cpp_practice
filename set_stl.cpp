@@ -19,6 +19,24 @@ int main()
     // print the set in sorted order
     for (auto i : s)
         cout << i << " ";
+    cout << endl;
+    // note that set does not repeat values
 
-    // not that set elements do not repeat
+    // to erase an element from the set, use .erase function
+    s.erase(s.begin());
+    cout << "After erasing the first element: ";
+    for (auto i : s)
+        cout << i << " ";
+    cout << endl;
+
+    // to erase let's say the 2nd element we have to iterate through the set
+
+    set<int>::iterator it = s.begin();
+    it++;
+    s.erase(it);
+    cout << "After erasing the second element: ";
+    for (auto i : s)
+        cout << i << " ";
+
+    // iterators are used to point at the memory addresses of STL containers
 }
