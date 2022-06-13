@@ -39,4 +39,15 @@ int main()
         cout << i << " ";
 
     // iterators are used to point at the memory addresses of STL containers
+    // We can use iterators to move through the contents of the container
+
+    // use .count function to check if a value is present in the set
+    cout << endl
+         << "Is 8 present in the set: " << s.count(8) << endl;
+
+    // use .find function to return an iterator to the element in the set
+    set<int>::iterator itr = s.find(8);
+    cout << "Find the element 8 in the set: " << *itr << endl;
+
+    // print elements after iterator(8) in the set
 }
